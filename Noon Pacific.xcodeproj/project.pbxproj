@@ -14,6 +14,7 @@
 		93C89CD51B3CC3340033CCCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C89CD31B3CC3340033CCCC /* Main.storyboard */; };
 		93C89CE11B3CC3350033CCCC /* Noon_PacificTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C89CE01B3CC3350033CCCC /* Noon_PacificTests.m */; };
 		93C89CEB1B3CD2790033CCCC /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C89CEA1B3CD2790033CCCC /* WebKit.framework */; };
+		93C8AA301B3CFF3B0033CCCC /* injected.js in Resources */ = {isa = PBXBuildFile; fileRef = 93C8AA2F1B3CFF3B0033CCCC /* injected.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		93C89CDF1B3CC3350033CCCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93C89CE01B3CC3350033CCCC /* Noon_PacificTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Noon_PacificTests.m; sourceTree = "<group>"; };
 		93C89CEA1B3CD2790033CCCC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		93C8AA2F1B3CFF3B0033CCCC /* injected.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = injected.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		93C89CC61B3CC3340033CCCC /* Noon Pacific */ = {
 			isa = PBXGroup;
 			children = (
+				93C8AA2F1B3CFF3B0033CCCC /* injected.js */,
 				93C89CC91B3CC3340033CCCC /* AppDelegate.h */,
 				93C89CCA1B3CC3340033CCCC /* AppDelegate.m */,
 				93C89CCE1B3CC3340033CCCC /* ViewController.h */,
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93C89CD21B3CC3340033CCCC /* Images.xcassets in Resources */,
+				93C8AA301B3CFF3B0033CCCC /* injected.js in Resources */,
 				93C89CD51B3CC3340033CCCC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

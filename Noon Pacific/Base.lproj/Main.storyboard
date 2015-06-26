@@ -55,6 +55,37 @@
                                     </items>
                                 </menu>
                             </menuItem>
+                            <menuItem title="Play" id="bIX-eh-PQ2">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Play" systemMenu="window" id="vEc-Pq-yqa">
+                                    <items>
+                                        <menuItem title="Play" id="rt6-xE-VTy" userLabel="Play">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="play:" target="Ady-hI-5gd" id="eL1-bC-np7"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Pause" id="XKV-hX-NlQ" userLabel="Pause">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="pause:" target="Ady-hI-5gd" id="OVM-pw-j6d"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Next" id="kKw-qn-IbZ">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="next:" target="Ady-hI-5gd" id="ZUM-ZU-2XH"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Previous" id="E98-9A-MDx" userLabel="Previous">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="previous:" target="Ady-hI-5gd" id="zDH-99-9vX"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
                             <menuItem title="Window" id="aUF-d1-5bR">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
@@ -96,9 +127,26 @@
                     </menu>
                     <connections>
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                        <outlet property="dockMenu" destination="Iq0-Cj-rz0" id="eD7-jS-UFZ"/>
                     </connections>
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
+                <menu id="Iq0-Cj-rz0" userLabel="Dock Menu">
+                    <items>
+                        <menuItem title="Play" id="b2A-Qm-Ro0" userLabel="Play">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="play:" target="Ady-hI-5gd" id="XzM-Nz-gYP"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Pause" id="z1q-ZD-Kac" userLabel="Pause">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="pause:" target="Ady-hI-5gd" id="Kvk-I8-H3t"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
@@ -135,6 +183,9 @@
                                 <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" minimumFontSize="5" plugInsEnabled="NO" javaEnabled="NO">
                                     <nil key="identifier"/>
                                 </webPreferences>
+                                <connections>
+                                    <outlet property="frameLoadDelegate" destination="XfG-lQ-9wD" id="AEB-iK-yeQ"/>
+                                </connections>
                             </webView>
                         </subviews>
                         <constraints>
@@ -150,7 +201,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="1003"/>
         </scene>
     </scenes>
 </document>
